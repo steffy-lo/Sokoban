@@ -1,0 +1,9 @@
+/** WRITE YOUR TIPS IN THIS FILE **/
+1. Slowly increase the constraints of the game. A stronger heuristic comes from increasing the constraints of the game
+on relatively more relaxed constraints that follow weaker heuristics.
+2. Specifically for Sokoban, avoiding deadlocks are very important to determining whether a solution will be reached.
+Therefore, the alternative heuristics must take into account an infinitely high cost if the state is a "deadlock" and
+it is important to find what state determines these deadlocks.
+3. Finally, make sure that your heuristic is admissible while incorporating as many factors of the game as possible
+into the heuristic such that similar states can be distinguished even by a small margin. In other words, keep
+searching for ways to make the heuristic more dominant.
